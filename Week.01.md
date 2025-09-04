@@ -43,8 +43,13 @@ void key(){
 ##### gnd 검은선 : 길이가 짧다
 ##### 아두이노 그라운드는 3개
 ##### pinMode(pin, mode) : 특정한 핀을 입력으로 쓸지 출력으로 쓸지 설정하는 함수
-#####         - pin: 설정하려는 핀의 번호
-#####         - mode : OUTPUT(출력), INPUT(입력), INPUT드
+##### ⠀⠀⠀⠀⠀⠀⠀- pin: 설정하려는 핀의 번호
+##### ⠀⠀⠀⠀⠀⠀⠀- mode : OUTPUT(출력), INPUT(입력), INPUT_PULLUP(내부의 풀업저항 사용) 중 원하는 모드
+##### ⠀⠀⠀⠀⠀⠀⠀ex)pinMode(13, OUTPUT) - 13번 핀을 출력모드로 설정
+##### digitalWrite(핀번호, 값) : 주어진 핀번호에 대해 값을 기록
+##### ⠀⠀⠀⠀⠀⠀⠀ex) digitalWrite(13, HIGH); - 13번에 5v의 전력을 주어 불을 켬
+##### ⠀⠀⠀⠀⠀⠀⠀ex) digitalWrite(13, LOW); - 13번에 0v의 전력을 주어 불을 끔
+##### delay : 기다리기/ 1000 = 1초
 ```java
 import processing.serial.*; // c언어와 다르게 java에서는 import를 사용한다
 Serial p;
